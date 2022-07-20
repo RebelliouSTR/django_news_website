@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <nav class="container relative mx-auto bg-blue-100 p-6">
+      <!--FLEX CONTAINER-->
+      <div class="flex items-center justify-between">
+        <!--LOGO-->
+        <div class="p-1">
+          <img src="../dist/img/frkn logo.png" class="md:h-10 lg:h-16" alt="" />
+        </div>
+        <!--MENU ITEMS-->
+        <div class="hidden space-x-6 md:flex">
+          <a class="font-semibold hover:text-blue-700" href="gundem.html"
+            >Gündem</a
+          >
+          <a class="font-semibold hover:text-blue-700" href="dunya.html"
+            >Dünya</a
+          >
+          <a class="font-semibold hover:text-blue-700" href="spor.html">Spor</a>
+          <a class="font-semibold hover:text-blue-700" href="yasam.html"
+            >Yaşam</a
+          >
+          <a class="font-semibold hover:text-blue-700" href="magazin.html"
+            >Magazin</a
+          >
+        </div>
+        <!--BUTTON-->
+        <a
+          href="#"
+          class="baseline hidden rounded-full bg-red-500 p-3 px-6 pt-2 text-white hover:bg-red-400 md:block"
+          >Giriş</a
+        >
+      </div>
+    </nav>
+    <!--HERO SECTION-->
+    <section class="container relative mx-auto px-0 pt-6" id="hero">
+      <!--SLIDER-->
+      <div id="default-carousel" class="relative" data-carousel="Slide">
+        <div
+          class="relative h-56 overflow-hidden rounded-lg sm:h-64 xl:h-80 2xl:h-96"
+        >
+          <div
+            class="absolute inset-0 z-20 translate-x-0 transform transition-all duration-700 ease-in-out"
+            data-carousel-item=""
+          >
+            <span
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-2xl font-semibold text-white dark:text-gray-800 sm:text-3xl"
+              >First Slide</span
+            >
+            <img
+              src="https://img.freepik.com/free-psd/furniture-facebook-cover-web-banner-template_237398-329.jpg?w=2000"
+              class="absolute top-1/2 left-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+              alt="..."
+            />
+          </div>
+
+          <div
+            class="absolute inset-0 z-10 translate-x-full transform transition-all duration-700 ease-in-out"
+            data-carousel-item=""
+          >
+            <img
+              src="https://img.freepik.com/free-psd/furniture-facebook-cover-web-banner-template_237398-329.jpg?w=2000"
+              class="absolute top-1/2 left-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+              alt="..."
+            />
+          </div>
+
+          <div
+            class="absolute inset-0 z-10 -translate-x-full transform transition-all duration-700 ease-in-out"
+            data-carousel-item=""
+          >
+            <img
+              src="https://img.freepik.com/free-psd/furniture-facebook-cover-web-banner-template_237398-329.jpg?w=2000"
+              class="absolute top-1/2 left-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+              alt="..."
+            />
+          </div>
+        </div>
+
+        <div
+          class="absolute bottom-5 left-1/2 z-30 flex -translate-x-1/2 space-x-3"
+        >
+          <button
+            type="button"
+            class="h-3 w-3 rounded-full bg-white dark:bg-gray-800"
+            aria-current="true"
+            aria-label="Slide 1"
+            data-carousel-slide-to="0"
+          ></button>
+          <button
+            type="button"
+            class="h-3 w-3 rounded-full bg-white/50 hover:bg-white dark:bg-gray-800/50 dark:hover:bg-gray-800"
+            aria-current="false"
+            aria-label="Slide 2"
+            data-carousel-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            class="h-3 w-3 rounded-full bg-white/50 hover:bg-white dark:bg-gray-800/50 dark:hover:bg-gray-800"
+            aria-current="false"
+            aria-label="Slide 3"
+            data-carousel-slide-to="2"
+          ></button>
+        </div>
+
+        <button
+          type="button"
+          class="group absolute top-0 left-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
+          data-carousel-prev=""
+        >
+          <span
+            class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70 sm:h-10 sm:w-10"
+          >
+            <svg
+              class="h-5 w-5 text-white dark:text-gray-800 sm:h-6 sm:w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"
+              ></path>
+            </svg>
+            <span class="hidden">Previous</span>
+          </span>
+        </button>
+        <button
+          type="button"
+          class="group absolute top-0 right-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
+          data-carousel-next=""
+        >
+          <span
+            class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70 sm:h-10 sm:w-10"
+          >
+            <svg
+              class="h-5 w-5 text-white dark:text-gray-800 sm:h-6 sm:w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              ></path>
+            </svg>
+            <span class="hidden">Next</span>
+          </span>
+        </button>
+      </div>
+    </section>
+    <!--FEATURES SECTION-->
+    <section id="" features>
+      <!--FLEX CONTAINER-->
+      <div
+        class="container mx-auto mt-10 flex flex-col space-y-12 px-4 md:flex-row md:space-y-0"
+      >
+        <!--WHAT'S DIFFERENT-->
+
+        <div
+          class="max-w-sm rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800"
+        >
+          <a href="#">
+            <img
+              class="rounded-t-lg"
+              src="https://img.freepik.com/free-psd/furniture-facebook-cover-web-banner-template_237398-329.jpg?w=2000"
+              alt=""
+            />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Noteworthy technology acquisitions 2021
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Here are the biggest enterprise technology acquisitions of 2021 so
+              far, in reverse chronological order.
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center rounded-lg bg-blue-700 py-2 px-3 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              Read more
+              <svg
+                class="ml-2 -mr-1 h-4 w-4"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!--NUMBERED LIST-->
+        <div class="flex flex-col space-y-8 md:w-1/2">
+          <!--LIST ITEM 1-->
+          <div
+            class="flex flex-col space-y-3 md:flex-row md:space-y-0 md:space-x-6"
+          >
+            <!--HEADING-->
+            <div class="rounded-l-full bg-red-400 md:bg-transparent">
+              <div class="flex items-center space-x-2">
+                <div
+                  class="rounded-full bg-red-400 px-4 py-2 text-white md:py-1"
+                >
+                  01
+                </div>
+                <h3 class="text-base font-bold md:mb-4 md:hidden">
+                  Track company wide-progress
+                </h3>
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-4 hidden text-lg font-bold md:block">
+                Track company wide-progress
+              </h3>
+              <p class="text-gray-600">
+                See how your day-to-day tasks fit into the wider vision. Go from
+                tracking progress at the milestone level all the way done to the
+                smallest of details. never lose sight of the bigger picture
+                again.
+              </p>
+            </div>
+          </div>
+
+          <!--LIST ITEM 2-->
+          <div
+            class="flex flex-col space-y-3 md:flex-row md:space-y-0 md:space-x-6"
+          >
+            <!--HEADING-->
+            <div class="rounded-l-full bg-red-400 md:bg-transparent">
+              <div class="flex items-center space-x-2">
+                <div
+                  class="rounded-full bg-red-400 px-4 py-2 text-white md:py-1"
+                >
+                  02
+                </div>
+                <h3 class="text-base font-bold md:mb-4 md:hidden">
+                  Advanced built-in reports
+                </h3>
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-4 hidden text-lg font-bold md:block">
+                Advanced built-in reports
+              </h3>
+              <p class="text-gray-600">
+                Set internal delivery estimates and track progress toward
+                company goals. Our customisable dashboard helps you build out
+                the reports you need to keep key stakeholders informed.
+              </p>
+            </div>
+          </div>
+          <!--LIST ITEM 3-->
+          <div
+            class="flex flex-col space-y-3 md:flex-row md:space-y-0 md:space-x-6"
+          >
+            <!--HEADING-->
+            <div class="rounded-l-full bg-red-400 md:bg-transparent">
+              <div class="flex items-center space-x-2">
+                <div
+                  class="rounded-full bg-red-400 px-4 py-2 text-white md:py-1"
+                >
+                  03
+                </div>
+                <h3 class="text-base font-bold md:mb-4 md:hidden">
+                  Everything you need in one place
+                </h3>
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-4 hidden text-lg font-bold md:block">
+                Everything you need in one place
+              </h3>
+              <p class="text-gray-600">
+                Stop jumping from one service to anothe to communicate, store
+                files, track tasks and share documents. Manage offers and
+                all-in-one team productivity solution.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--TESTIMONIALS-->
+    <section id="testimonials">
+      <!--CONTAINER TO HEADING AND TESTM BLOCKS-->
+      <div class="mx-auto mt-32 max-w-6xl px-5 text-center">
+        <!--HEADING-->
+        <h2 class="text-center text-4xl font-bold">
+          What's Different About Manage?
+        </h2>
+        <!--TESTIMONIALS CONTAINER-->
+        <div class="mt-24 flex flex-col md:flex-row md:space-x-6">
+          <!--TESTIMONIAL 1-->
+          <div
+            class="flex flex-col items-center space-y-6 rounded-lg bg-gray-200 p-6 md:w-1/3"
+          >
+            <img
+              src="../dist/img/avatar-anisha.png"
+              class="-mt-14 w-16"
+              alt=""
+            />
+            <h5 class="text-lg font-bold">Anisha Li</h5>
+            <p class="text-sm text-gray-500">
+              "Manage has supercharged our team's workflow. The ability to
+              maintain visibility on larger milestones at all times keeps
+              everyone motivated.""
+            </p>
+          </div>
+          <!--TESTIMONIAL 2-->
+          <div
+            class="mt-9 flex flex-col items-center space-y-6 rounded-lg bg-gray-200 p-6 md:mt-0 md:w-1/3"
+          >
+            <img src="../dist/img/avatar-ali.png" class="-mt-14 w-16" alt="" />
+            <h5 class="text-lg font-bold">Ali Bravo</h5>
+            <p class="text-sm text-gray-500">
+              "We have been able to cancel so many other subscriptions since
+              using Manage. There is no more cross-channel confusion and
+              everyone is much more focused."
+            </p>
+          </div>
+          <!--TESTIMONIAL 3-->
+          <div
+            class="mt-9 flex flex-col items-center space-y-6 rounded-lg bg-gray-200 p-6 md:mt-0 md:w-1/3"
+          >
+            <img
+              src="../dist/img/avatar-richard.png"
+              class="-mt-14 w-16"
+              alt=""
+            />
+            <h5 class="text-lg font-bold">Richard Watts</h5>
+            <p class="text-sm text-gray-500">
+              "Manage has supercharged our team's workflow. The ability to
+              maintain visibility on larger milestones at all times keeps
+              everyone motivated."
+            </p>
+          </div>
+        </div>
+        <!--BUTTON-->
+        <div class="my-16">
+          <a
+            href="#"
+            class="baseline rounded-full bg-red-500 p-3 px-6 pt-2 text-white hover:bg-red-400"
+            >Get Started</a
+          >
+        </div>
+      </div>
+    </section>
+    <!--CTA SECTION-->
+    <section id="cta" class="bg-red-500">
+      <!--FLEX CONTAINER-->
+      <div
+        class="container mx-auto flex flex-col items-center justify-between space-y-12 px-6 py-24 md:flex-row md:space-y-0 md:py-12"
+      >
+        <h2
+          class="text-center text-5xl font-bold leading-tight text-white md:max-w-xl md:text-left md:text-4xl"
+        >
+          Simplify how your team works today
+        </h2>
+        <!--BUTTON-->
+        <div>
+          <a
+            href="#"
+            class="baseline rounded-full bg-white p-3 px-6 pt-2 text-red-500 shadow-2xl hover:bg-gray-300"
+            >Get Started</a
+          >
+        </div>
+      </div>
+    </section>
+    <!--FOOTER-->
+    <footer class="bg-blue-500">
+      <!--FLEX CONTAINER-->
+      <div
+        class="container mx-auto flex flex-col-reverse justify-between space-y-8 px-6 py-10 md:flex-row md:space-y-0"
+      >
+        <!--LOGO AND SOCIAL LINKS CONTAINER-->
+        <div
+          class="flex flex-col-reverse items-center justify-between space-x-4 space-y-12"
+        >
+          <div class="mx-auto my-6 mr-2 text-center text-white md:hidden">
+            Copyright &copy; 2022, All Rights Reserved
+          </div>
+          <!--LOGO-->
+          <div>
+            <img src="../dist/img/logo-white.svg" class="h-8" alt="" />
+          </div>
+          <!--SOCIAL LINKS CONTAINER-->
+          <div class="flex justify-between space-x-4">
+            <!--LINK 1-->
+            <a href="#">
+              <img
+                src="../dist/img/icon-facebook.svg"
+                class="mb-4 h-8 w-8 md:m-0 md:h-6 md:w-6"
+                alt=""
+              />
+            </a>
+            <!--LINK 2-->
+            <a href="#">
+              <img
+                src="../dist/img/icon-youtube.svg"
+                class="mb-4 h-8 md:m-0"
+                alt=""
+              />
+            </a>
+            <!--LINK 3-->
+            <a href="#">
+              <img
+                src="../dist/img/icon-twitter.svg"
+                class="mb-4 h-8 md:m-0"
+                alt=""
+              />
+            </a>
+            <!--LINK 4-->
+            <a href="#">
+              <img
+                src="../dist/img/icon-pinterest.svg"
+                class="mb-4 h-8 md:m-0"
+                alt=""
+              />
+            </a>
+            <!--LINK 5-->
+            <a href="#">
+              <img
+                src="../dist/img/icon-instagram.svg"
+                class="mb-4 h-8 md:m-0"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+        <!--LIST CONTAINER-->
+        <div class="flex justify-around space-x-32">
+          <div class="ml-5 flex flex-col space-y-3 text-white">
+            <a href="" class="hover:text-red-400">Home</a>
+            <a href="" class="hover:text-red-400">Pricing</a>
+            <a href="" class="hover:text-red-400">Products</a>
+            <a href="" class="hover:text-red-400">About</a>
+          </div>
+          <div class="flex flex-col space-y-3 text-white">
+            <a href="" class="hover:text-red-400">Careers</a>
+            <a href="" class="hover:text-red-400">Community</a>
+            <a href="" class="hover:text-red-400">Privacy Policy</a>
+          </div>
+        </div>
+        <!--INPUT CONTAINER-->
+        <div class="flex flex-col justify-between">
+          <form>
+            <div class="flex space-x-3">
+              <input
+                type="text"
+                class="flex-1 rounded-full px-4 focus:outline-none"
+                placeholder="Updated in your inbox"
+              />
+              <button
+                class="rounded-full bg-red-500 px-6 py-2 text-white hover:bg-red-400 focus:outline-none"
+              >
+                Go
+              </button>
+            </div>
+          </form>
+          <div class="hidden text-white md:block">
+            Copyright &copy; 2022, All Rights Reserved
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+    <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
+  </body>
+</html>
